@@ -1,6 +1,6 @@
 [Ivy]
-[>Created: Fri Jul 01 11:43:10 CEST 2011]
-12FE42499C744A02 3.17 #module
+[>Created: Tue Mar 15 16:22:04 CET 2016]
+12FE42499C744A02 3.18 #module
 >Proto >Proto Collection #zClass
 cs0 cmsToolProcess Big #zClass
 cs0 RD #cInfo
@@ -1498,7 +1498,7 @@ cs0 f145 actionDecl 'ch.xpertline.xtrans.cmsTool.cmsToolData out;
 ' #txt
 cs0 f145 actionTable 'out=in;
 ' #txt
-cs0 f145 actionCode 'import ch.xpertline.xtrans.excel.ProgressMessage;
+cs0 f145 actionCode 'import ch.xpertline.xtrans.excel.ProgressMsg;
 import ch.xpertline.xtrans.excel.exportHandler;
 
 exportHandler exp = new exportHandler(panel);
@@ -1506,7 +1506,7 @@ java.io.File file = exp.transformTable2Excel(panel.tbl_cmsObjects, panel.cmb_pro
 
 if (file != null){
 	ivy.log.debug(file.getAbsolutePath().toString());
-	ProgressMessage msg  = exp.export	(file);
+	ProgressMsg msg  = exp.export	(file);
 	ivy.log.debug(msg.text);
 }' #txt
 cs0 f145 type ch.xpertline.xtrans.cmsTool.cmsToolData #txt
@@ -1521,10 +1521,10 @@ cs0 f147 expr out #txt
 cs0 f147 1320 130 1320 156 #arcP
 cs0 f152 guid 1308D380D201A768 #txt
 cs0 f152 type ch.xpertline.xtrans.cmsTool.cmsToolData #txt
-cs0 f152 method exportSuccess(ch.xpertline.xtrans.excel.ProgressMessage) #txt
+cs0 f152 method exportSuccess(ch.xpertline.xtrans.excel.ProgressMsg) #txt
 cs0 f152 disableUIEvents false #txt
 cs0 f152 inParameterDecl 'ch.ivyteam.ivy.richdialog.exec.RdMethodCallEvent methodEvent = event as ch.ivyteam.ivy.richdialog.exec.RdMethodCallEvent;
-<ch.xpertline.xtrans.excel.ProgressMessage message> param = methodEvent.getInputArguments();
+<ch.xpertline.xtrans.excel.ProgressMsg message> param = methodEvent.getInputArguments();
 ' #txt
 cs0 f152 inParameterMapAction 'out.errorMessage=param.message.text;
 ' #txt
@@ -1543,10 +1543,10 @@ cs0 f152 1190 62 20 20 13 0 #rect
 cs0 f152 @|RichDialogMethodStartIcon #fIcon
 cs0 f149 guid 1308D38377189ED6 #txt
 cs0 f149 type ch.xpertline.xtrans.cmsTool.cmsToolData #txt
-cs0 f149 method errorMethod(ch.xpertline.xtrans.excel.ProgressMessage) #txt
+cs0 f149 method errorMethod(ch.xpertline.xtrans.excel.ProgressMsg) #txt
 cs0 f149 disableUIEvents false #txt
 cs0 f149 inParameterDecl 'ch.ivyteam.ivy.richdialog.exec.RdMethodCallEvent methodEvent = event as ch.ivyteam.ivy.richdialog.exec.RdMethodCallEvent;
-<ch.xpertline.xtrans.excel.ProgressMessage message> param = methodEvent.getInputArguments();
+<ch.xpertline.xtrans.excel.ProgressMsg message> param = methodEvent.getInputArguments();
 ' #txt
 cs0 f149 inActionCode 'out.errorMessage = param.message.text;' #txt
 cs0 f149 outParameterDecl '<> result;

@@ -27,7 +27,7 @@
         <inputParameter>
             <name>message</name>
             <description></description>
-            <parameterType>ch.xpertline.xtrans.excel.ProgressMessage</parameterType>
+            <parameterType>ch.xpertline.xtrans.excel.ProgressMsg</parameterType>
             <nullPermitted>false</nullPermitted>
         </inputParameter>
     </method>
@@ -37,7 +37,7 @@
         <inputParameter>
             <name>message</name>
             <description></description>
-            <parameterType>ch.xpertline.xtrans.excel.ProgressMessage</parameterType>
+            <parameterType>ch.xpertline.xtrans.excel.ProgressMsg</parameterType>
             <nullPermitted>false</nullPermitted>
         </inputParameter>
     </method>

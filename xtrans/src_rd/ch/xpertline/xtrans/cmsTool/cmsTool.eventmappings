@@ -16,7 +16,7 @@
 ~.lnk_delete@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/130402EA78B9D58C
 ~.btn_close@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/13006C6401E4BCF2
 ~.tree_cmsObjects@TREE_SELECTION[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/13007B0E6EE2A0B0
-~@RD_METHODCALL[errorMethod(ch.xpertline.xtrans.excel.ProgressMessage)]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/1308D38377189ED6
+~@RD_METHODCALL[errorMethod(ch.xpertline.xtrans.excel.ProgressMsg)]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/1308D38377189ED6
 ~.tbl_cmsObjects@KEY[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/13045D645A6378D1
 ~.lup_search@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/130ABCDF9D137D6F
 ~@RD_METHODCALL[importWizzard(ch.xpertline.xtrans.excel.ImportData)]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/13097616E789F752
@@ -34,7 +34,7 @@
 ~@RD_METHODCALL[refresh()]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/130AC0BC4B9B865E
 ~.hdn_search@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/130ABCDF9D137D6F
 ~.mnu_tree_newFolder@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/130455411FF6BC3A
-~@RD_METHODCALL[exportSuccess(ch.xpertline.xtrans.excel.ProgressMessage)]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/1308D380D201A768
+~@RD_METHODCALL[exportSuccess(ch.xpertline.xtrans.excel.ProgressMsg)]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/1308D380D201A768
 ~@RD_BROADCAST[supportedLangRemoved]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/1306A4F19042D64D
 ~.lup_search@FOCUS[GAINED]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/13007292F75D0C0A
 ~@RD_METHODCALL[supportedLangAdded(java.util.Locale)]--->ch.ivyteam.ivy.process.ProcessStart:12FE42499C744A02/13097B06E5084899

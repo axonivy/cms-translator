@@ -25,7 +25,7 @@ import ch.ivyteam.ivy.scripting.objects.Recordset;
 import ch.ivyteam.ivy.security.SecurityManagerFactory;
 import ch.xpertline.ria.util.RDCallbackMethodHandler;
 import ch.xpertline.xtrans.cmsTool.cmsToolPanel;
-import ch.xpertline.xtrans.excel.ProgressMessage;
+import ch.xpertline.xtrans.excel.ProgressMsg;
 
 /**
  * Helper-class for translating CMS of other projects in the same workspace
@@ -40,7 +40,7 @@ public class CMSTranslator {
 	private static IProcessModelVersion proModVers;
 	private List<String> langs = null;
 	private static cmsToolPanel parentPanel;
-	private static ProgressMessage progressMessage;
+	private static ProgressMsg progressMessage;
 	
 	private IContentManagementSystem cms;
 	/**
@@ -257,9 +257,9 @@ public class CMSTranslator {
 	
 	public void deleteObjects(List<String> _paths) throws PersistencyException{
 		if (_paths == null){
-			progressMessage = new ProgressMessage();
+			progressMessage = new ProgressMsg();
 			progressMessage.setText(Ivy.cms().co("/ch/ivyteam/xtrans/labels/messages/pathListEmpty"));
-			progressMessage.setType(ProgressMessage.ERROR_MESSAGE);
+			progressMessage.setType(ProgressMsg.ERROR_MESSAGE);
 			RDCallbackMethodHandler.callRDMethod(parentPanel, "errorMethod", new Object[]{progressMessage});
 			return;
 		}
@@ -322,9 +322,9 @@ public class CMSTranslator {
 			cms.removeSupportedLanguage(_lang);
 		}catch(Throwable t){
 			Ivy.log().error(t.getMessage(), t);
-			progressMessage = new ProgressMessage();
+			progressMessage = new ProgressMsg();
 			progressMessage.setText(t.getMessage());
-			progressMessage.setType(ProgressMessage.ERROR_MESSAGE);
+			progressMessage.setType(ProgressMsg.ERROR_MESSAGE);
 			RDCallbackMethodHandler.callRDMethod(parentPanel, "errorMethod", new Object[]{progressMessage});
 		}
 		langs.remove(_lang.getLanguage());

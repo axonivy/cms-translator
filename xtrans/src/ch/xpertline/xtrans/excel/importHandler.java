@@ -22,7 +22,7 @@ import com.ulcjava.base.shared.FileChooserConfig.FileFilterConfig;
 
 public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 	
-	private ProgressMessage returnedMessage = new ProgressMessage();
+	private ProgressMsg returnedMessage = new ProgressMsg();
 	private T ulcPane = null;
 	private List<String> langList;
 	private List<String> pathList;
@@ -32,7 +32,7 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 	@SuppressWarnings("unchecked")
 	public importHandler(){
 		ulcPane = null;
-		returnedMessage = new ProgressMessage();
+		returnedMessage = new ProgressMsg();
 		langList = List.create(String.class);
 		pathList = List.create(String.class);
 		Map<String, String> muMap = new HashMap<String, String>();
@@ -42,7 +42,7 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 	@SuppressWarnings("unchecked")
 	public importHandler(final T _ulcPane){
 		ulcPane = _ulcPane;
-		returnedMessage = new ProgressMessage();
+		returnedMessage = new ProgressMsg();
 		langList = List.create(String.class);
 		pathList = List.create(String.class);
 		Map<String, String> muMap = new HashMap<String, String>();
@@ -53,7 +53,7 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 	{
 		ImportData imp = new ImportData();
 		
-		returnedMessage.setType(ProgressMessage.INFORMATION_MESSAGE);
+		returnedMessage.setType(ProgressMsg.INFORMATION_MESSAGE);
 		returnedMessage.setText("");
 		//uploadedFile = null;
 
@@ -69,7 +69,7 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 			{
 				if (reason != CANCELLED){
 					returnedMessage.setText(description);
-					returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
+					returnedMessage.setType(ProgressMsg.ERROR_MESSAGE);
 					RDCallbackMethodHandler.callRDMethod(ulcPane, "errorMethod", new Object[] {returnedMessage});
 				}
 			}
@@ -135,12 +135,12 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 						}
 					}else{
 						returnedMessage.setText(Ivy.cms().co("/ch/ivyteam/xtrans/labels/messages/notAnXls"));
-						returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
+						returnedMessage.setType(ProgressMsg.ERROR_MESSAGE);
 						RDCallbackMethodHandler.callRDMethod(ulcPane, "errorMethod", new Object[] {returnedMessage});
 					}
 				} catch (Exception e) {
 					returnedMessage.setText(e.getMessage());
-					returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
+					returnedMessage.setType(ProgressMsg.ERROR_MESSAGE);
 					RDCallbackMethodHandler.callRDMethod(ulcPane, "errorMethod", new Object[] {returnedMessage});
 				}
 			}
