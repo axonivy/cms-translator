@@ -1077,7 +1077,6 @@ private RLabel getLbl_plus() {
 		lbl_plus.setText("+");
 		lbl_plus.setName("lbl_plus");
 		lbl_plus.setStyleProperties("{/font {/name \"Dialog\"/size \"14\"/style \"BOLD\"}/insetsBottom \"0\"/insetsTop \"0\"/insetsLeft \"3\"}");
-		lbl_plus.setName("lbl_pls");
 		lbl_plus.setForeground(this.getBackground().darker());
 		lbl_plus.setToolTipText("Alt + +");
 	}
