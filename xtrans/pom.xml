@@ -2,12 +2,15 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>ch.xpertline.xtrans</groupId>
-  <artifactId>ch.xpertline.xtrans</artifactId>
-  <version>1010000.0.0-SNAPSHOT</version>
+  <groupId>com.axonivy.ivy.supplements</groupId>
+  <artifactId>xtrans</artifactId>
+  <version>6.0.0-SNAPSHOT</version>
   <packaging>iar</packaging>
+  
   <name>xtrans</name>
-  <description>fgjklökjlikujztgrfdgjkl</description>
+  <organization><name>The open source community of Axon.ivy</name></organization>
+  <description>Utility project that simplifies CMS translations and bulk import/exports from/to Excel with a RichDialog UI.</description>
+  
   <build>
     <plugins>
       <plugin>
