@@ -74,7 +74,7 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 				}
 			}
 
-			@SuppressWarnings({ "deprecation", "unchecked" })
+			@SuppressWarnings({ "deprecation" })
 			public void onSuccess(InputStream ins[], String filePaths[], String fileNames[]){
 				try {
 					if (fileNames.length == 1 && fileNames[0].endsWith(".xls")){
@@ -84,7 +84,7 @@ public class importHandler<T extends ULCComponent & IRichDialogPanel> {
 							if (shiit.getPhysicalNumberOfRows() > 0){
 								if(shiit.getRow(0).getPhysicalNumberOfCells() > 0){
 									for (int i = 0; i < shiit.getPhysicalNumberOfRows(); i++){
-										Map map = new HashMap<String, String>();
+										Map<String, String> map = new HashMap<>();
 										valueList.add(map);
 									}
 									for (int i = 0; i < shiit.getRow(0).getPhysicalNumberOfCells(); i++){

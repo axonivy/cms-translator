@@ -105,11 +105,10 @@ public class CMSTranslator {
 		return cms;
 	}
 		
-	@SuppressWarnings("unchecked")
 	public java.util.List<IContentObject> getContentHierarchyList(IContentObject currentLevel) throws PersistencyException{		
 		java.util.List<IContentObject> allLevelChildren = List.create(IContentObject.class);
 		java.util.List<IContentObject> currentLevelChildren = (java.util.List<IContentObject>) currentLevel.getChildren();
-		Iterator cLCI = currentLevelChildren.iterator();
+		Iterator<IContentObject> cLCI = currentLevelChildren.iterator();
 		IContentObject currentContentObject;
 		
 		// read current content object recursivly and add all children to the output list
@@ -260,7 +259,7 @@ public class CMSTranslator {
 		if (_paths == null){
 			progressMessage = new ProgressMessage();
 			progressMessage.setText(Ivy.cms().co("/ch/ivyteam/xtrans/labels/messages/pathListEmpty"));
-			progressMessage.setType(progressMessage.ERROR_MESSAGE);
+			progressMessage.setType(ProgressMessage.ERROR_MESSAGE);
 			RDCallbackMethodHandler.callRDMethod(parentPanel, "errorMethod", new Object[]{progressMessage});
 			return;
 		}
@@ -325,7 +324,7 @@ public class CMSTranslator {
 			Ivy.log().error(t.getMessage(), t);
 			progressMessage = new ProgressMessage();
 			progressMessage.setText(t.getMessage());
-			progressMessage.setType(progressMessage.ERROR_MESSAGE);
+			progressMessage.setType(ProgressMessage.ERROR_MESSAGE);
 			RDCallbackMethodHandler.callRDMethod(parentPanel, "errorMethod", new Object[]{progressMessage});
 		}
 		langs.remove(_lang.getLanguage());

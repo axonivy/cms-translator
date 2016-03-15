@@ -113,7 +113,7 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 						cell.setCellStyle(cs);
 					} else if (o instanceof Date) {
 						cell = r.createCell(j, HSSFCell.CELL_TYPE_NUMERIC);
-						cell.setCellValue(((Date) o).toDate());
+						cell.setCellValue(((Date) o).toJavaDate());
 						cell.setCellStyle(csDate);
 					} else if (o instanceof java.util.Date) {
 						cell = r.createCell(j, HSSFCell.CELL_TYPE_NUMERIC);
