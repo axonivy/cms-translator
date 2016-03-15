@@ -29,7 +29,7 @@ import ch.xpertline.ria.util.RDCallbackMethodHandler;
 
 public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 	
-	private progressMessage returnedMessage;
+	private ProgressMessage returnedMessage;
 	private T ulcPane = null;
 	
 	private static java.io.File exportedExcel;
@@ -39,12 +39,12 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 	
 	public exportHandler(final T _ulcPane) {
 		ulcPane = _ulcPane;
-		returnedMessage = new progressMessage();
+		returnedMessage = new ProgressMessage();
 	}
 	
 	public exportHandler(){
 		ulcPane = null;
-		returnedMessage = new progressMessage();
+		returnedMessage = new ProgressMessage();
 	}
 	
 	
@@ -148,8 +148,8 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 		return exportedExcel;
 	}
 	
-	public progressMessage export(final File file) {
-		returnedMessage.setType(progressMessage.INFORMATION_MESSAGE);
+	public ProgressMessage export(final File file) {
+		returnedMessage.setType(ProgressMessage.INFORMATION_MESSAGE);
 		returnedMessage.setText("");
 				
 		final FileChooserConfig fcConfig = new FileChooserConfig();
@@ -178,7 +178,7 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 						exportedExcel.delete();
 					}
 					if  (msg.trim().length() > 0)  {
-						returnedMessage.setType(progressMessage.ERROR_MESSAGE);
+						returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
             			returnedMessage.setText(msg);
             			RDCallbackMethodHandler.callRDMethod(ulcPane, "errorMethod", new Object[] {returnedMessage});
 					}
@@ -189,12 +189,12 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 						formatServerPath(outputPath);
 						File serverDir = new File(outputPath);
 						if((serverDir.exists() && !serverDir.isDirectory()) || !serverDir.exists()){
-							returnedMessage.setType(progressMessage.ERROR_MESSAGE);
+							returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
 		            		returnedMessage.setText("The directory supposed to contain the File to download doesn't exist. "+outputPath);
 						}
 						else {
 							if(!file.exists()){
-								returnedMessage.setType(progressMessage.ERROR_MESSAGE);
+								returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
 			            		returnedMessage.setText("The file you try to download doesn't exit.");
 							}else{
 								FileInputStream fis = new FileInputStream(file);
@@ -205,11 +205,11 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 			            		}
 			            		fis.close();
 			            		
-								returnedMessage.setType(progressMessage.SUCCESS_MESSAGE);
+								returnedMessage.setType(ProgressMessage.SUCCESS_MESSAGE);
 							}
 						}
 					} catch (IOException ioe) {
-						returnedMessage.setType(progressMessage.ERROR_MESSAGE);
+						returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
 	            		returnedMessage.setText(ioe.getMessage());
 	            		RDCallbackMethodHandler.callRDMethod(ulcPane, "errorMethod", new Object[] {returnedMessage});
 					}
@@ -217,13 +217,13 @@ public class exportHandler<T extends ULCComponent & IRichDialogPanel> {
 
 				public void onSuccess(String filePath, String fileName) {
 					exportedExcel.delete();
-					returnedMessage.setType(progressMessage.SUCCESS_MESSAGE);
+					returnedMessage.setType(ProgressMessage.SUCCESS_MESSAGE);
 					returnedMessage.setText("<html>Congratulations! Export Successfull to " + filePath + "</html>");
 					RDCallbackMethodHandler.callRDMethod(ulcPane, "exportSuccess", new Object[] {returnedMessage});
 				}
 			}, fcConfig, ulcPane);
 		} catch (Exception e) {
-			returnedMessage.setType(progressMessage.ERROR_MESSAGE);
+			returnedMessage.setType(ProgressMessage.ERROR_MESSAGE);
     		returnedMessage.setText(e.getMessage());
     		RDCallbackMethodHandler.callRDMethod(ulcPane, "errorMethod", new Object[] {returnedMessage});
 		}

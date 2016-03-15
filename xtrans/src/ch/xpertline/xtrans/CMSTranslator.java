@@ -10,9 +10,6 @@ import java.util.concurrent.Callable;
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IWorkspace;
 import org.eclipse.core.resources.ResourcesPlugin;
-import org.hibernate.mapping.Collection;
-
-import ch.xpertline.xtrans.CMSObject;
 
 import ch.ivyteam.ivy.application.IProcessModelVersion;
 import ch.ivyteam.ivy.cm.CoType;
@@ -28,7 +25,7 @@ import ch.ivyteam.ivy.scripting.objects.Recordset;
 import ch.ivyteam.ivy.security.SecurityManagerFactory;
 import ch.xpertline.ria.util.RDCallbackMethodHandler;
 import ch.xpertline.xtrans.cmsTool.cmsToolPanel;
-import ch.xpertline.xtrans.excel.progressMessage;
+import ch.xpertline.xtrans.excel.ProgressMessage;
 
 /**
  * Helper-class for translating CMS of other projects in the same workspace
@@ -43,7 +40,7 @@ public class CMSTranslator {
 	private static IProcessModelVersion proModVers;
 	private List<String> langs = null;
 	private static cmsToolPanel parentPanel;
-	private static progressMessage progressMessage;
+	private static ProgressMessage progressMessage;
 	
 	private IContentManagementSystem cms;
 	/**
@@ -261,7 +258,7 @@ public class CMSTranslator {
 	
 	public void deleteObjects(List<String> _paths) throws PersistencyException{
 		if (_paths == null){
-			progressMessage = new progressMessage();
+			progressMessage = new ProgressMessage();
 			progressMessage.setText(Ivy.cms().co("/ch/ivyteam/xtrans/labels/messages/pathListEmpty"));
 			progressMessage.setType(progressMessage.ERROR_MESSAGE);
 			RDCallbackMethodHandler.callRDMethod(parentPanel, "errorMethod", new Object[]{progressMessage});
@@ -326,7 +323,7 @@ public class CMSTranslator {
 			cms.removeSupportedLanguage(_lang);
 		}catch(Throwable t){
 			Ivy.log().error(t.getMessage(), t);
-			progressMessage = new progressMessage();
+			progressMessage = new ProgressMessage();
 			progressMessage.setText(t.getMessage());
 			progressMessage.setType(progressMessage.ERROR_MESSAGE);
 			RDCallbackMethodHandler.callRDMethod(parentPanel, "errorMethod", new Object[]{progressMessage});

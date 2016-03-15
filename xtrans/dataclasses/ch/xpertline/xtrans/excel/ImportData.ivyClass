@@ -6,5 +6,5 @@ pathList List<String> #field
 pathList PERSISTENT #fieldModifier
 valueList 'List<java.util.Map<String, String>>' #field
 valueList PERSISTENT #fieldModifier
-returnedMessage ch.xpertline.xtrans.excel.progressMessage #field
+returnedMessage ch.xpertline.xtrans.excel.ProgressMessage #field
 returnedMessage PERSISTENT #fieldModifier

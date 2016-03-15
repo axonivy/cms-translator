@@ -8,7 +8,7 @@ package ch.xpertline.xtrans.excel;
 
 /**
  */
-public class progressMessage extends ch.ivyteam.ivy.scripting.objects.CompositeObject
+public class ProgressMessage extends ch.ivyteam.ivy.scripting.objects.CompositeObject
 {
   /** SerialVersionUID */
   private static final long serialVersionUID = 3968555253302051005L;
