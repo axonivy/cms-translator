@@ -1,0 +1,7 @@
+# Xpert.ivy RichDialog Event-Mapping Data
+# 2011-06-06 10:13:48 | 4.2.0.35989 | 1.0
+~.langs@LIST_SELECTION[]--->ch.ivyteam.ivy.process.ProcessStart:13063CE8462D0CC9/13063EA2CDE63F6D # lanngChooserProcess.mod/klick 
+~@RD_METHODCALL[start(List<java.util.Locale>)]--->ch.ivyteam.ivy.process.ProcessStart:13063CE8462D0CC9/13063D4EB01DA8CF
+~.submit@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13063CE8462D0CC9/13063D516EACB023 # lanngChooserProcess.mod/submit 
+~.langs@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13063CE8462D0CC9/13063D516EACB023 # lanngChooserProcess.mod/submit 
+~@RD_METHODCALL[start()]--->ch.ivyteam.ivy.process.ProcessStart:13063CE8462D0CC9/13063CE84978ED88

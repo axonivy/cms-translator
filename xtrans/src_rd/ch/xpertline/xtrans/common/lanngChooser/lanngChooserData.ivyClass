@@ -1,0 +1,8 @@
+lanngChooserData #class
+ch.xpertline.xtrans.common.lanngChooser #namespace
+langs List<java.util.Locale> #field
+langs PERSISTENT #fieldModifier
+lang java.util.Locale #field
+lang PERSISTENT #fieldModifier
+currLang java.util.Locale #field
+currLang PERSISTENT #fieldModifier

@@ -1,0 +1,5 @@
+# Xpert.ivy RichDialog Event-Mapping Data
+# 2011-05-31 12:28:14 | 4.2.0.35989 | 1.0
+~@RD_METHODCALL[start()]--->ch.ivyteam.ivy.process.ProcessStart:13045901FD521F3E/13045901FDFE95AB
+~@RD_METHODCALL[start(String,String)]--->ch.ivyteam.ivy.process.ProcessStart:13045901FD521F3E/130459486461CF4F
+~.ok@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13045901FD521F3E/1304594F7082938A # messageProcess.mod/ok_Click

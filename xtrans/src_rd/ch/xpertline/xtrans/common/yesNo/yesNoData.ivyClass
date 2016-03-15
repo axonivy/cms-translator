@@ -1,0 +1,8 @@
+yesNoData #class
+ch.xpertline.xtrans.common.yesNo #namespace
+message String #field
+message PERSISTENT #fieldModifier
+type String #field
+type PERSISTENT #fieldModifier
+result String #field
+result PERSISTENT #fieldModifier

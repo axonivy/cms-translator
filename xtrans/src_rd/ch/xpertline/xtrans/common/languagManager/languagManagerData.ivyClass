@@ -1,0 +1,16 @@
+languagManagerData #class
+ch.xpertline.xtrans.common.languagManager #namespace
+lcle2add java.util.Locale #field
+lcle2add PERSISTENT #fieldModifier
+lcle2rmv java.util.Locale #field
+lcle2rmv PERSISTENT #fieldModifier
+supLocls List<java.util.Locale> #field
+supLocls PERSISTENT #fieldModifier
+aviLocls List<java.util.Locale> #field
+aviLocls PERSISTENT #fieldModifier
+answer String #field
+answer PERSISTENT #fieldModifier
+lastSelectedIndexBot Number #field
+lastSelectedIndexBot PERSISTENT #fieldModifier
+lastSelectedIndexTop Number #field
+lastSelectedIndexTop PERSISTENT #fieldModifier

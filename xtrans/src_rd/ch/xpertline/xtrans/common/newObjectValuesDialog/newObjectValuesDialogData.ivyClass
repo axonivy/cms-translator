@@ -1,0 +1,10 @@
+newObjectValuesDialogData #class
+ch.xpertline.xtrans.common.newObjectValuesDialog #namespace
+object ch.xpertline.xtrans.NewObjectData #field
+object PERSISTENT #fieldModifier
+answer String #field
+answer PERSISTENT #fieldModifier
+avLangs List<java.util.Locale> #field
+avLangs PERSISTENT #fieldModifier
+defaultLang java.util.Locale #field
+defaultLang PERSISTENT #fieldModifier

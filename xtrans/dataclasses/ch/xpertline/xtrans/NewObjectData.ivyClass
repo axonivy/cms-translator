@@ -1,0 +1,12 @@
+NewObjectData #class
+ch.xpertline.xtrans #namespace
+name String #field
+name PERSISTENT #fieldModifier
+path String #field
+path PERSISTENT #fieldModifier
+type String #field
+type PERSISTENT #fieldModifier
+langs List<java.util.Locale> #field
+langs PERSISTENT #fieldModifier
+values List<String> #field
+values PERSISTENT #fieldModifier

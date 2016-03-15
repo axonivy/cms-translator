@@ -1,0 +1,9 @@
+# Xpert.ivy RichDialog Event-Mapping Data
+# 2011-06-06 11:46:50 | 4.2.0.35989 | 1.0
+~.btn_next@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/130462F7B113DFC3
+~.btn_finish@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/130462FA311D1F61
+~.txt_name@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/130462F7B113DFC3
+~@RD_METHODCALL[start()]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/13045C65D30FA7A0
+~@RD_METHODCALL[start(Tree,Tree,String,String)]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/13045CEB0B13DDB5
+~.treeFolders@TREE_SELECTION[]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/1304634E03852FD3
+~.btn_cancel@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13045C65D26B96A3/130462FCB7859A83

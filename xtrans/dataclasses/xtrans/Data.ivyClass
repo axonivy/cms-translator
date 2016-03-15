@@ -1,0 +1,8 @@
+Data #class
+xtrans #namespace
+projectName String #field
+projectName PERSISTENT #fieldModifier
+cms ch.ivyteam.ivy.cm.IContentManagementSystem #field
+cms PERSISTENT #fieldModifier
+contentObjectList List<ch.ivyteam.ivy.cm.IContentObject> #field
+contentObjectList PERSISTENT #fieldModifier

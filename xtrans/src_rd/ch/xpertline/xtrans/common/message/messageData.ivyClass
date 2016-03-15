@@ -1,0 +1,6 @@
+messageData #class
+ch.xpertline.xtrans.common.message #namespace
+type String #field
+type PERSISTENT #fieldModifier
+message String #field
+message PERSISTENT #fieldModifier

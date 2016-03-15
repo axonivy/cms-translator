@@ -1,0 +1,12 @@
+importWizardData #class
+ch.xpertline.xtrans.excel.importWizard #namespace
+langs List<String> #field
+langs PERSISTENT #fieldModifier
+overwrite Boolean #field
+overwrite PERSISTENT #fieldModifier
+createNew Boolean #field
+createNew PERSISTENT #fieldModifier
+handleUnsprtd Boolean #field
+handleUnsprtd PERSISTENT #fieldModifier
+answer String #field
+answer PERSISTENT #fieldModifier

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<richDialogDescriptor>
+    <autoScreenshot>true</autoScreenshot>
+    <startMethod>
+        <name>start</name>
+        <description>Default Rich Dialog start
+This method can not be changed or deleted!</description>
+    </startMethod>
+    <startMethod>
+        <name>start</name>
+        <description></description>
+        <inputParameter>
+            <name>currLangList</name>
+            <description></description>
+            <parameterType>List&lt;java.util.Locale&gt;</parameterType>
+            <nullPermitted>false</nullPermitted>
+        </inputParameter>
+    </startMethod>
+    <firedEvent>
+        <name>supportedLangAdded</name>
+        <description></description>
+        <scope>APPLICATION</scope>
+        <attachment>
+            <name>locale</name>
+            <description></description>
+            <parameterType>java.util.Locale</parameterType>
+            <nullPermitted>true</nullPermitted>
+        </attachment>
+    </firedEvent>
+    <firedEvent>
+        <name>supportedLangRemoved</name>
+        <description></description>
+        <scope>APPLICATION</scope>
+        <attachment>
+            <name>locale</name>
+            <description></description>
+            <parameterType>java.util.Locale</parameterType>
+            <nullPermitted>true</nullPermitted>
+        </attachment>
+    </firedEvent>
+    <property>
+        <name>guid</name>
+        <value>13069CF7AFB1DF9F</value>
+        <readOnly>true</readOnly>
+    </property>
+    <property>
+        <name>version</name>
+        <value>1</value>
+        <readOnly>true</readOnly>
+    </property>
+    <property>
+        <name>binary</name>
+        <value>false</value>
+        <readOnly>true</readOnly>
+    </property>
+</richDialogDescriptor>

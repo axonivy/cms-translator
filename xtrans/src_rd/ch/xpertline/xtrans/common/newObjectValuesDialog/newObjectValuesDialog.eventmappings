@@ -1,0 +1,8 @@
+# Xpert.ivy RichDialog Event-Mapping Data
+# 2011-06-06 10:26:59 | 4.2.0.35989 | 1.0
+~.lnk_addVal@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130636241473D892/13063712D6BCD747 # newObjectValuesDialogProcess.mod/addNewVal
+~.btn_cancel@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130636241473D892/13064092A5CA3912 # newObjectValuesDialogProcess.mod/cancel
+~@RD_METHODCALL[start()]--->ch.ivyteam.ivy.process.ProcessStart:130636241473D892/13063624163E7612
+~.btn_back@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130636241473D892/13064094C4CFBD17 # newObjectValuesDialogProcess.mod/back
+~@RD_METHODCALL[start(String,String,List<java.util.Locale>,java.util.Locale)]--->ch.ivyteam.ivy.process.ProcessStart:130636241473D892/13063957AEDC8B7B
+~.btn_finish@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130636241473D892/1306408DBAABB98D # newObjectValuesDialogProcess.mod/finish

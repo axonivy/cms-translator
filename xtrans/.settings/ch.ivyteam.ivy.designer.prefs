@@ -1,0 +1,9 @@
+#Fri Jan 17 09:04:20 CET 2014
+ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_DATA_CLASS=xtrans.Data
+ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:DEFAULT_NAMESPACE=xtrans
+ch.ivyteam.ivy.designer.preferences.DataClassPreferencePage\:useProjectSettings=true
+ch.ivyteam.ivy.designer.preferences.IvyScriptPreferencePage\:DEFAULT_ACTION_TABLE_INSCRIPTION=ACTION_INSCRIPTION_IN
+ch.ivyteam.ivy.designer.preferences.IvyScriptPreferencePage\:VISIBILITY_LEVEL=EXPERT
+ch.ivyteam.ivy.designer.preferences.IvyScriptPreferencePage\:useProjectSettings=true
+ch.ivyteam.ivy.project.preferences\:PROJECT_VERSION=43000
+eclipse.preferences.version=1

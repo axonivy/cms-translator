@@ -1,0 +1,32 @@
+cmsToolData #class
+ch.xpertline.xtrans.cmsTool #namespace
+cms ch.ivyteam.ivy.cm.IContentManagementSystem #field
+cms PERSISTENT #fieldModifier
+translat0r ch.xpertline.xtrans.CMSTranslator #field
+translat0r PERSISTENT #fieldModifier
+recordset Recordset #field
+recordset PERSISTENT #fieldModifier
+langs List<String> #field
+langs PERSISTENT #fieldModifier
+contentList List<ch.xpertline.xtrans.CMSObject> #field
+contentList PERSISTENT #fieldModifier
+selectedTreeNode Tree #field
+selectedTreeNode PERSISTENT #fieldModifier
+answer String #field
+answer PERSISTENT #fieldModifier
+folderName String #field
+folderName PERSISTENT #fieldModifier
+newObjectData ch.xpertline.xtrans.NewObjectData #field
+newObjectData PERSISTENT #fieldModifier
+currLevel Tree #field
+currLevel PERSISTENT #fieldModifier
+langCheckBoxes java.util.HashMap #field
+langCheckBoxes PERSISTENT #fieldModifier
+errorMessage String #field
+errorMessage PERSISTENT #fieldModifier
+importData ch.xpertline.xtrans.excel.ImportData #field
+importData PERSISTENT #fieldModifier
+lcle2add java.util.Locale #field
+lcle2add PERSISTENT #fieldModifier
+lcle2rmv java.util.Locale #field
+lcle2rmv PERSISTENT #fieldModifier

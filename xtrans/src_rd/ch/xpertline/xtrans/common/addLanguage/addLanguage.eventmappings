@@ -1,0 +1,9 @@
+# Xpert.ivy RichDialog Event-Mapping Data
+# 2011-05-26 07:58:08 | 4.2.0.35989 | 1.0
+~.lkp_language@VALUE_CHANGED[]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/1302ADD2AE858A67 # addLanguageProcess.mod/lkp_valueChanged()
+~.btn_submit@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/01302AC9CCC79BFB # addLanguageProcess.mod/ok_click()
+~.lkp_language@KEY[]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/1302ADD2AE858A67 # addLanguageProcess.mod/lkp_valueChanged()
+~@RD_METHODCALL[start(List<String>)]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/1302ABEE571CFEB0
+~.lkp_language@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/01302AC9CCC79BFB # addLanguageProcess.mod/ok_click()
+~@RD_METHODCALL[start()]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/13021F0ED4D2CC12
+~.lkp_language@FOCUS[LOST]--->ch.ivyteam.ivy.process.ProcessStart:13021F0ED3DAF1C2/1302ADD2AE858A67 # addLanguageProcess.mod/lkp_valueChanged()

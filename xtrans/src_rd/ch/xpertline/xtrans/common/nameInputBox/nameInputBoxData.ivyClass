@@ -1,0 +1,6 @@
+nameInputBoxData #class
+ch.xpertline.xtrans.common.nameInputBox #namespace
+answer String #field
+answer PERSISTENT #fieldModifier
+name String #field
+name PERSISTENT #fieldModifier

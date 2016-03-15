@@ -1,0 +1,3 @@
+co: name={notAnXls} description={} changed={2011-06-28 07:44:37 CEST} changedby={xtrans} visualorder={0} guid={130B18C897BFC6A2} parentguid={} typeguid={E6AFEA202AFB4911} id={} parentid={} typeid={}
+val: guid={130BBE12969F9A51} datatype={} isdefault={false} langid={de} description={} validfrom={2011-06-23 11:42:33 CEST} validto={} changed={2011-06-23 11:43:05 CEST} changedby={lt} properties={} id={}
+val: guid={130B18C897BB20F1} datatype={} isdefault={true} langid={en} description={} validfrom={2011-06-21 11:33:55 CEST} validto={} changed={2011-06-23 11:38:46 CEST} changedby={lt} properties={} id={}

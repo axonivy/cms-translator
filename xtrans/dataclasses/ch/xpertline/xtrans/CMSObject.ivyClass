@@ -1,0 +1,12 @@
+CMSObject #class
+ch.xpertline.xtrans #namespace
+name String #field
+name PERSISTENT #fieldModifier
+path String #field
+path PERSISTENT #fieldModifier
+level String #field
+level PERSISTENT #fieldModifier
+type ch.ivyteam.ivy.cm.CoType #field
+type PERSISTENT #fieldModifier
+value java.util.HashMap #field
+value PERSISTENT #fieldModifier

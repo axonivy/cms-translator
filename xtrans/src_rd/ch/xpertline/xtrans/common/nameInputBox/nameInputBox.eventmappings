@@ -1,0 +1,7 @@
+# Xpert.ivy RichDialog Event-Mapping Data
+# 2011-05-31 12:09:37 | 4.2.0.35989 | 1.0
+~@RD_METHODCALL[start()]--->ch.ivyteam.ivy.process.ProcessStart:130456F91BCBE0A4/130456F91CB9C46B
+~.ok@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130456F91BCBE0A4/130457DFFE037539 # nameInputBoxProcess.mod/ok
+~@RD_METHODCALL[startWithOutput()]--->ch.ivyteam.ivy.process.ProcessStart:130456F91BCBE0A4/130457CF53CA003C
+~.cancel@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130456F91BCBE0A4/130457DF35121610 # nameInputBoxProcess.mod/cancel
+~.input@ACTION[]--->ch.ivyteam.ivy.process.ProcessStart:130456F91BCBE0A4/130457DFFE037539 # nameInputBoxProcess.mod/ok

@@ -1,0 +1,6 @@
+addLanguageData #class
+ch.xpertline.xtrans.common.addLanguage #namespace
+oldLangsList List<String> #field
+oldLangsList PERSISTENT #fieldModifier
+newLang String #field
+newLang PERSISTENT #fieldModifier

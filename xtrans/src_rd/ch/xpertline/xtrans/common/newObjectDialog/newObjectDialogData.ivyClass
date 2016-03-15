@@ -1,0 +1,14 @@
+newObjectDialogData #class
+ch.xpertline.xtrans.common.newObjectDialog #namespace
+tree Tree #field
+tree PERSISTENT #fieldModifier
+path String #field
+path PERSISTENT #fieldModifier
+name String #field
+name PERSISTENT #fieldModifier
+type String #field
+type PERSISTENT #fieldModifier
+currLevel Tree #field
+currLevel PERSISTENT #fieldModifier
+answer String #field
+answer PERSISTENT #fieldModifier
