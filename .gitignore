@@ -7,3 +7,7 @@
 # Maven
 **/logs/
 **/target/
+
+#Generated
+**/src_dataclasses/**/*.java
+**/classes/
