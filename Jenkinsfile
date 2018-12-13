@@ -18,7 +18,6 @@ pipeline {
       post {
         success {
           archiveArtifacts 'xtrans/target/*.iar'
-          junit '**/target/surefire-reports/**/*.xml' 
         }
       }
     }
